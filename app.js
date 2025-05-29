@@ -1,13 +1,12 @@
 function showRating(rating) {
   let ratings = "";
-  for (let i = 0; i < 4; ++i) {
+  for (let i = 0; i < rating; ++i) {
     ratings = ratings + "*";
-    if (i !== 3) {
+    if (i !== rating - 1) {
       ratings = ratings + " ";
     }
   }
   return ratings;
 }
 
-
-console.log(showRating(4));
+console.log(showRating(2));
