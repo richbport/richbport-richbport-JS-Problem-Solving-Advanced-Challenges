@@ -1,5 +1,11 @@
-function sortLowToHigh(numbers) {
+function sortHighToLow(numbers) {
   return numbers.sort((a, b) => b - a);
 }
 
-console.log(sortLowToHigh([1, 5, 0, 10, 1000005, 2000, 2]));
+console.log(
+  sortHighToLow([
+    { id: 1, price: 50 },
+    { id: 2, price: 0 },
+    { id: 3, price: 500 },
+  ])
+);
