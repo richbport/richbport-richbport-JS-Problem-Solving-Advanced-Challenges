@@ -1,7 +1,5 @@
 function sortLowToHigh(numbers) {
-  return numbers.sort((a, b) => {
-    return a - b;
-});
+  return numbers.sort((a, b) => b - a);
 }
 
-console.log(sortLowToHigh([1, 5, 0, 100000, 2000, 2]));
+console.log(sortLowToHigh([1, 5, 0, 10, 1000005, 2000, 2]));
