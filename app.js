@@ -1,7 +1,5 @@
 function sortHighToLow(numbers) {
-  return numbers.sort((a, b) => {
-    return b.price - a.price;
-  });
+  return numbers.sort((a, b) => b.price - a.price);
 }
 
 console.log(
