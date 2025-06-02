@@ -1,3 +1,8 @@
-let name = [12, 'John', true, "Hello World", 45.43];
+let personalInfo = [18, "John", true, "person123@gmail.com"];
 
-console.log(name.filter(elem => typeof elem === "string"))
+let personalInfoObject = {
+  age: 18,
+  name: "John",
+  isRegistered: true,
+  email: "person123@gmail.com",
+};
