@@ -1,8 +1,5 @@
-let personalInfo = [18, "John", true, "person123@gmail.com"];
+let assignment = 23
 
-let personalInfoObject = {
-  age: 18,
-  name: "John",
-  isRegistered: true,
-  email: "person123@gmail.com",
-};
+assignment += 2
+
+console.log(assignment)
