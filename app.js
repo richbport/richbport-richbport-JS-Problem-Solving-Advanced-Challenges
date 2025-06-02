@@ -1,5 +1,10 @@
-fetch("https://jsonplaceholder.typicode.com/users/1").then(response => {
-  response.json().then(data => {
-    console.log(data);
-  });
-});
+let age = 65;
+
+if (age >= 18) {
+  console.log("You are an adult.");
+}
+if (age >= 65) {
+  console.log("You are a senior.");
+} else {
+  console.log("You are a minor.");
+}
