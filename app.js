@@ -1,10 +1,12 @@
-let age = 65;
+let day = "Monday";
 
-if (age >= 18) {
-  console.log("You are an adult.");
-}
-if (age >= 65) {
-  console.log("You are a senior.");
-} else {
-  console.log("You are a minor.");
+switch (day) {
+  case "Monday":
+    console.log("Start of the workweek!");
+    break;
+  case "Friday":
+    console.log("Weekend is near!");
+    break;
+  default:
+    console.log("It's a regular day.");
 }
