@@ -1,5 +1,6 @@
-let fruits = ["Apple", "Banana", "Cherry"];
+let count = 0;
 
-for (let i = 0; i < fruits.length; i++) {
-  console.log(fruits[i]);
+while (count < 5) {
+  console.log("Count: " + count);
+  count++;
 }
