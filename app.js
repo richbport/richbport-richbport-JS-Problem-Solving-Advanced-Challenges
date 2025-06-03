@@ -1,6 +1,5 @@
-let x = 10;
-
-do {
-  console.log("x is: " + x);
-  x++;
-} while (x < 5);
+fetch("https://jsonplaceholder.typicode.com/users/1").then(response => {
+  response.json().then(data => {
+    console.log(data);
+  })
+})
