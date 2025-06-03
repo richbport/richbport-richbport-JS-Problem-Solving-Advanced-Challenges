@@ -1,15 +1,5 @@
-let day = "Saturday";
+let fruits = ["Apple", "Banana", "Cherry"];
 
-switch (day) {
-  case "Monday":
-    console.log("Start of the workweek!");
-    break;
-  case "Friday":
-    console.log("Weekend is near!");
-    break;
-    case "Saturday":
-    console.log("It's the weekend!");
-    break;
-  default:
-    console.log("It's a regular day.");
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
 }
