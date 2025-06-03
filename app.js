@@ -1,6 +1,6 @@
-let count = 0;
+let x = 10;
 
-while (count < 5) {
-  console.log("Count: " + count);
-  count++;
-}
+do {
+  console.log("x is: " + x);
+  x++;
+} while (x < 5);
