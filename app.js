@@ -1,7 +1,10 @@
-const emailRef = document.querySelector(".email");
+// let student = {
+//   name: "James",
+//   email: "james123@gmail.com",
+//   age: 21,
+//   studentFull: true,
+//   modulesFinished: [0, 1, 2, 3],
+// };
 
-fetch("https://jsonplaceholder.typicode.com/users/1").then((response) => {
-  return response.json().then((data) => {
-    emailRef.innerHTML = data.username;
-  });
-});
+
+
