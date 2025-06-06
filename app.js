@@ -6,4 +6,5 @@ fetch("https://jsonplaceholder.typicode.com/users/1")
   })
   .then((data) => {
     console.log(data);
+    emailRef.innerHTML = data.email
   });
