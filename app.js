@@ -14,6 +14,7 @@ function getSubscriptionStatus() {
 // Async/Await
 async function main() {
   const status = (await getSubscriptionStatus());
+  statusRef.innerHTML = status
 }
 
 main();
