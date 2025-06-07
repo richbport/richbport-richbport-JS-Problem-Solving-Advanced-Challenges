@@ -1,7 +1,11 @@
 function getSubscriptionStatus() {
   return new Promise((resolve, reject) => {
-    resolve("VIP")
-  })
+    resolve("VIP");
+  });
 }
 
-console.log(getSubscriptionStatus())
+async function main() {
+  console.log(await getSubscriptionStatus());
+}
+
+main();
