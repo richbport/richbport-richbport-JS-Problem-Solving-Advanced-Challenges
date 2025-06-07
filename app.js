@@ -1,16 +1,19 @@
+const statusRef = document.querySelector(".status")
+
 function getSubscriptionStatus() {
   return new Promise((resolve, reject) => {
-    resolve("VIP");
+    setTimeout(() => {
+      resolve("VIP");
+    }, 2000);
   });
 }
 
 // .then
-getSubscriptionStatus().then(response => console.log(response))
-
+// getSubscriptionStatus().then((response) => console.log(response));
 
 // Async/Await
 async function main() {
-  console.log(await getSubscriptionStatus());
+  const status = (await getSubscriptionStatus());
 }
 
 main();
