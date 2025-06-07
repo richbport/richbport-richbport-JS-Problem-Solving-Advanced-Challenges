@@ -3,8 +3,12 @@ function getSubscriptionStatus() {
     resolve("VIP");
   });
 }
-getSubscriptionStatus().then(response => console.log())
 
+// .then
+getSubscriptionStatus().then(response => console.log(response))
+
+
+// Async/Await
 async function main() {
   console.log(await getSubscriptionStatus());
 }
