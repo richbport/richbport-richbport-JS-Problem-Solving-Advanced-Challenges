@@ -3,6 +3,7 @@ function getSubscriptionStatus() {
     resolve("VIP");
   });
 }
+getSubscriptionStatus().then(response => console.log())
 
 async function main() {
   console.log(await getSubscriptionStatus());
