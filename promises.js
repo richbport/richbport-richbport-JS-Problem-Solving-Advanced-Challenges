@@ -13,9 +13,20 @@ function getPosts() {
   }, 1000);
 }
 
-function createPost(post, callback) {
-  setTimeout(() => {
-    posts.push(post);
-    callback();
-  }, 2000);
+function createPost(post) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      posts.push(post);
+
+      const error = false;
+
+      if (!error) {
+        resolve();
+      } else {
+        reject("Error: Something went wrong");
+      }
+    }, 2000);
+  });
 }
+
+createPost({ title: "Post Three", body: "This is post three"}).then(getPosts)
