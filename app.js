@@ -1,11 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let button = document.getElementById("myButton");
+// Get references to the input and output elements
+  let input = document.getElementById("myInput");
+  let output = document.getElementById("output");
 
-  if (button) {
-    button.addEventListener("click", function () {
-      alert("button was clicked!");
+  // Check if the elements exist
+  if (input && output) {
+    // Add an input event listener tot he input field
+    input.addEventListener("input", function () {
+      // Update the output text with the value of the input field
+      output.textContent = "you typed: " + input.value;
     });
   } else {
-    console.error("Button element not found!");
+    // Log an error if the elements are not found
+    if (!input) {
+      console.error("Input element not found!");
+    }
+    if (!output) {
+      console.error("Output element not found!")
+    }
   }
 });
