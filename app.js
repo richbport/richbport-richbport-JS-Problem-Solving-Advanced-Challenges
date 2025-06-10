@@ -20,3 +20,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  let input = document.getElementById("myInput");
+  let output = document.getElementById("output");
+
+  if(input && output){
+    input.addEventListener("input", function() {
+      output.textContent = "You typed " + input.value
+    })
+  }
+});
