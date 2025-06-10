@@ -29,28 +29,28 @@ function createPost(post) {
   });
 }
 
-async function fetchUsers() {
-  const res = await fetch
-  ("https://jsonplaceholder.typicode.com/users");
+// async function fetchUsers() {
+//   const res = await fetch
+//   ("https://jsonplaceholder.typicode.com/users");
 
-  const data = await res.json();
+//   const data = await res.json();
 
-  console.log(data);
-}
+//   console.log(data);
+// }
 
-fetchUsers();
+// fetchUsers();
 
 // createPost({ title: "Post Three", body: "This is post three" })
 //   .then(getPosts)
 //   .catch((err) => console.log(err));
 
-// async function init() {
-//   await createPost({ title: "Post Three", body: "This is post three" });
+async function init() {
+  await createPost({ title: "Post Three", body: "This is post three" });
 
-//   getPosts();
-// }
+  getPosts();
+}
 
-// init();
+init();
 
 // const promise1 = Promise.resolve("Hello World");
 // const promise2 = 10;
