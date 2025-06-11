@@ -29,10 +29,12 @@ document.addEventListener("DOMContentLoaded", function () {
     input.addEventListener("input", function () {
       output.textContent = "You typed: " + input.value;
     });
+  } else {
+    if(!input) {
+      console.log("Input not found!")
+    }
+    if(!output) {
+      console.log("Output not found!")
+    }
   }
 });
-//       , function() {
-//       output.textContent = "You typed " + input.value
-//     })
-//   }
-// });
