@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-// Get references to the input and output elements
+  // Get references to the input and output elements
   let input = document.getElementById("myInput");
   let output = document.getElementById("output");
 
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Input element not found!");
     }
     if (!output) {
-      console.error("Output element not found!")
+      console.error("Output element not found!");
     }
   }
 });
@@ -25,9 +25,14 @@ document.addEventListener("DOMContentLoaded", function () {
   let input = document.getElementById("myInput");
   let output = document.getElementById("output");
 
-  if(input && output){
-    input.addEventListener("input", function() {
-      output.textContent = "You typed " + input.value
-    })
+  if (input && output) {
+    input.addEventListener("input", function () {
+      output.textContent = "You typed: " + input.value;
+    });
   }
 });
+//       , function() {
+//       output.textContent = "You typed " + input.value
+//     })
+//   }
+// });
