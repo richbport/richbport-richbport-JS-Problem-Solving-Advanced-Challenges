@@ -6,8 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       let name = document.getElementById("name").value;
-      message.textContent = "Hello: + " + name + "!"
+      message.textContent = "Hello: " + name + "!"
     });
   } else {
+    if(!form) {
+      console.log("Form element does not exist!")
+    }
+    if(!message) {
+      console.log("Message element does not exist!")
+    }
   }
 });
