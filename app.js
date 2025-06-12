@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   if (form && message) {
     form.addEventListener("submit", function (event) {
       event.preventDefault();
+      let name = document.getElementById("name").value;
+      message.textContent = "Hello: + " + name + "!"
     });
   } else {
   }
