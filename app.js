@@ -13,10 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
     emailInput.addEventListener("input", function () {
       if (emailInput.value === "") {
         emailInput.textContent = "Email is required";
-      } else {
+      } else if (!emailInput.value.includes("@")) {
+      emailInput.textContent = "Please enter valid email address!";
+      }  else {
         emailInput.textContent = "";
       }
-      
     }
   );
   } else {
