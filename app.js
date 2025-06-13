@@ -9,7 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         nameError.textContent = "";
       }
-    });
+    })
+    emailInput.addEventListener("input", function () {
+      if (emailInput.value === "") {
+        emailInput.textContent = "Email is required";
+      } else {
+        emailInput.textContent = "";
+      }
+      
+    }
+  );
   } else {
     if (!nameInput) {
       console.log("Name input does not exist!");
