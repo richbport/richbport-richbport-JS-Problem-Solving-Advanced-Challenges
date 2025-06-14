@@ -3,7 +3,9 @@ async function postsByUser(userId) {
 
   const result = await promise.json();
 
-  console.log(result)
+  const posts = result.filter(element => element.userId === userId)
+
+  console.log(posts)
 }
 
 postsByUser(4);
