@@ -1,13 +1,11 @@
-async function firstSixIncomplete() {
+async function firstSixIncomplete(completed) {
   const promise = await fetch("https://jsonplaceholder.typicode.com/todos");
 
-  console.log(await promise.json())
+  const result = await promise.json();
 
-  // const result = await promise.json();
+  const todos = result.filter(element => element.completed !== true)
 
-  // const posts = result.filter(element => element.userId === userId)
-
-  // console.log(posts)
+  console.log(todos[0])
 }
 
-firstSixIncomplete();
+firstSixIncomplete(6);
