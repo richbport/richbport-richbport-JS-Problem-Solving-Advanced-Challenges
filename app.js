@@ -3,7 +3,7 @@ async function firstSixIncomplete(userId) {
 
   const result = await promise.json();
 
-  const incompleteTasks = result.filter((elem) => !elem.completed);
+  const incompleteTasks = result.filter((elem) => !elem.completed).slice(0, 6);
 
   console.log(incompleteTasks);
 }
